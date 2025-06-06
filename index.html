@@ -52,10 +52,10 @@
           <!-- <h1 class="title is-1 publication-title">RAD: Training an End-to-End Driving Policy via Large-Scale</h1>
           <h1 class="title is-1 publication-title"> 3DGS-based Reinforcement Learning</h1> -->
           <h1 class="title is-1 publication-title" style="white-space: nowrap;">
-            Genesis: Multimodal Driving Scene Generation with
+            Genesis: Multimodal Driving Scene <u>Gene</u>ration with
           </h1>
           <h1 class="title is-1 publication-title" style="white-space: nowrap;">
-            Spatio-Temporal and Cross-Modal Consistency
+            Spatio-Temporal and Cross-Modal Con<u>sis</u>tency
           </h1>
           
           <div class="is-size-5 publication-authors">
@@ -135,8 +135,6 @@
             </div>
 
           </div>
-
-
         </div>
       </div>
     </div>
@@ -157,12 +155,50 @@
 
 </section>
 
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-2" style="white-space: nowrap;">Closed-loop Evaluation in 3DGS-based Environments</h2>
+    <h2 class="title is-2" style="white-space: nowrap;">Joint generation of LiDAR and multi-view video</h2>
     <video controls width="100%">
-      <source src="./static/videos/rad_long.mp4" type="video/mp4">
+      <source src="./static/videos/22_combined.mp4" type="video/mp4">
     </video>
+  </div>
+</section> -->
+
+<section class="section">
+  <div class="container is-max-desktop" style="text-align: center;">
+    <h2 class="title is-2" style="white-space: nowrap; display: inline-block;">Joint generation of LiDAR and multi-view video</h2>
+    
+    <!-- 修改：垂直布局，间距40px，内容居中 -->
+    <div style="display: flex; flex-direction: column; gap: 40px; margin-top: 20px; align-items: center;">
+    
+      <!-- 第一个视频块 -->
+      <div style="text-align: center; width: 100%;">
+        <h3 class="title is-4">Clip1</h3>
+        <video controls width="100%">
+          <source src="./static/videos/22_combined.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- 第二个视频块 -->
+      <div style="text-align: center; width: 100%;">
+        <h3 class="title is-4">Clip2</h3>
+        <video controls width="100%">
+          <source src="./static/videos/25_combined.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- 第三个视频块 -->
+      <div style="text-align: center; width: 100%;">
+        <h3 class="title is-4">Clip3</h3>
+        <video controls width="100%">
+          <source src="./static/videos/26_combined.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -175,6 +211,95 @@
     <img src="./static/images/framework.png">
   </div>
 </section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-2">Video Generation Results</h2>
+    <div class="content has-text-justified">
+      Video Generation Comparison on nuScenes validation set, where green and blue represent the best and the second best values.
+    </div>
+    <img src="./static/images/video.png">
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-2">LiDAR Generation Results</h2>
+    <div class="content has-text-justified">
+      Lidar Generation Comparison on nuScenes validation set, where green and blue represent the best and the second best values. ‘gt_img” and gen_img” indicate using ground-truth or generated images as BEV condition input, respectively.
+    </div>
+    <img src="./static/images/lidar.png">
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop" style="text-align: center;">
+    <h2 class="title is-2" style="white-space: nowrap;">Long-term multi-view video generation over 20 seconds</h2>
+    <video controls width="100%">
+      <source src="./static/videos/69_long.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop" style="text-align: center;">
+    <h2 class="title is-2" style="white-space: nowrap; display: inline-block;">Controllable generation across time-of-day</h2>
+    
+    <!-- 修改：水平布局，间距40px，内容居中 -->
+    <div style="display: flex; flex-direction: row; gap: 40px; margin-top: 40px; justify-content: center; align-items: center;">
+    
+      <!-- 左边夜间视频块 -->
+      <div style="text-align: center; width: 50%;">
+        <h3 class="title is-4">night</h3>
+        <video controls width="100%">
+          <source src="./static/videos/135_night.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- 右边白天视频块 -->
+      <div style="text-align: center; width: 50%;">
+        <h3 class="title is-4">day</h3>
+        <video controls width="100%">
+          <source src="./static/videos/135_day.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop" style="text-align: center;">
+    <h2 class="title is-2" style="white-space: nowrap; display: inline-block;">Trajectory-conditioned novel view synthesis</h2>
+    
+    <!-- 修改：水平布局，间距40px，内容居中 -->
+    <div style="display: flex; flex-direction: row; gap: 40px; margin-top: 40px; justify-content: center; align-items: center;">
+    
+      <!-- 左边夜间视频块 -->
+      <div style="text-align: center; width: 50%;">
+        <h3 class="title is-4">Original</h3>
+        <video controls width="100%">
+          <source src="./static/videos/4-11.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- 右边白天视频块 -->
+      <div style="text-align: center; width: 50%;">
+        <h3 class="title is-4">Right Shift 2m</h3>
+        <video controls width="100%">
+          <source src="./static/videos/4-11-change.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 <style>
   .container.fixed-width {
@@ -214,262 +339,19 @@
   </style>
 </head>
 
-<div class="container fixed-width">
-  <div class="title-container"> 
-    <h2 class="title is-2">IL-only Policy vs RAD: Closed-loop Evaluation</h2> 
-    <div style="height: 3px;"></div>
-    <p class="subtitle is-5">Left: IL-only Policy| Right: RAD</p>  
-  </div>
-  <div style="height: 10px;"></div>
 
-  <div class="container background-container">
-    <h3 class="title is-4 has-text-centered">Clip 1 : Detour; Right-turn</h3>
-    <div class="columns is-multiline is-variable is-2 is-centered">  
-      <div class="column is-half">  
-        <div class="content">
-          <p class="content is-5 has-text-left">IL-only Policy: Dynamic Collision</p>  
-          <video class="video-container" autoplay controls muted loop playsinline>
-            <source src="./static/videos/clip_1726267373699-IL.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <div class="column is-half">  
-        <div class="content">
-          <p class="content is-5 has-text-left">RAD: Success</p>  
-          <video class="video-container" autoplay controls muted loop playsinline>
-            <source src="./static/videos/clip_1726267373699-RAD.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div style="height: 10px;"></div>
-  
-  <div class="container background-container">
-    <h3 class="title is-4 has-text-centered">Clip 2 : Yield to Pedestrians</h3>
-    <div class="columns is-multiline is-variable is-2 is-centered">
-      <!-- Row 2 -->
-      <div class="column is-half">
-        <div class="content">
-          <p class="content is-5 has-text-left">IL-only Policy: Dynamic Collision</p>
-          <video class="video-container" autoplay controls muted loop playsinline>
-            <source src="./static/videos/clip_1726273717199-IL.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <div class="column is-half">
-        <div class="content">
-          <p class="content is-5 has-text-left">RAD: Success</p>
-          <video class="video-container" autoplay controls muted loop playsinline>
-            <source src="./static/videos/clip_1726273717199-RAD.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div style="height: 10px;"></div>
-  
-  <div class="container background-container">
-    <h3 class="title is-4 has-text-centered">Clip 3 : U-turn</h3>
-    <div class="columns is-multiline is-variable is-2 is-centered">
-        <!-- Row 3 -->
-        <div class="column is-half">
-            <div class="content">
-                <p class="content is-5 has-text-left">IL-only Policy: Dynamic Collision</p>
-                <video class="video-container" autoplay controls muted loop playsinline>
-                    <source src="./static/videos/clip_1726300101299-IL.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-        <div class="column is-half">
-            <div class="content">
-                <p class="content is-5 has-text-left">RAD: Success</p>
-                <video class="video-container" autoplay controls muted loop playsinline>
-                    <source src="./static/videos/clip_1726300101299-RAD.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-    </div>
-  </div>
-  <div style="height: 10px;"></div>
-  
-  <div class="container background-container">
-    <h3 class="title is-4 has-text-centered">Clip 4 : Crawl in Dense Traffic</h3>
-    <div class="columns is-multiline is-variable is-2 is-centered">
-        <!-- Row 4 -->
-        <div class="column is-half">
-            <div class="content">
-                <p class="content is-5 has-text-left">IL-only Policy: Position Deviation</p>
-                <video class="video-container" autoplay controls muted loop playsinline>
-                    <source src="./static/videos/clip_1726710854599-IL.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-        <div class="column is-half">
-            <div class="content">
-                <p class="content is-5 has-text-left">RAD: Success</p>
-                <video class="video-container" autoplay controls muted loop playsinline>
-                    <source src="./static/videos/clip_1726710854599-RAD.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-    </div>
-  </div>
-  <div style="height: 10px;"></div>
-
-  <div class="container background-container">
-      <h3 class="title is-4 has-text-centered">Clip 5 : Unprotected Left-turn</h3>
-      <div class="columns is-multiline is-variable is-2 is-centered">
-          <!-- Row 5 -->
-          <div class="column is-half">
-              <div class="content">
-                  <p class="content is-5 has-text-left">IL-only Policy: Dynamic Collision</p>
-                  <video class="video-container" autoplay controls muted loop playsinline>
-                      <source src="./static/videos/clip_1726362331499-IL.mp4" type="video/mp4">
-                  </video>
-              </div>
-          </div>
-          <div class="column is-half">
-              <div class="content">
-                  <p class="content is-5 has-text-left">RAD: Success</p>
-                  <video class="video-container" autoplay controls muted loop playsinline>
-                      <source src="./static/videos/clip_1726362331499-RAD.mp4" type="video/mp4">
-                  </video>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div style="height: 10px;"></div>
-
-  <div class="container background-container">
-      <h3 class="title is-4 has-text-centered">Clip 6 : Crawl in Dense Traffic</h3>
-      <div class="columns is-multiline is-variable is-2 is-centered">
-          <!-- Row 6 -->
-          <div class="column is-half">
-              <div class="content">
-                  <p class="content is-5 has-text-left">IL-only Policy: Dynamic Collision</p>
-                  <video class="video-container" autoplay controls muted loop playsinline>
-                      <source src="./static/videos/clip_1726613460899-IL.mp4" type="video/mp4">
-                  </video>
-              </div>
-          </div>
-          <div class="column is-half">
-              <div class="content">
-                  <p class="content is-5 has-text-left">RAD: Success</p>
-                  <video class="video-container" autoplay controls muted loop playsinline>
-                      <source src="./static/videos/clip_1726613460899-RAD.mp4" type="video/mp4">
-                  </video>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div style="height: 10px;"></div>
-
-  <div class="container background-container">
-      <h3 class="title is-4 has-text-centered">Clip 7 : Unprotected Left-turn</h3>
-      <div class="columns is-multiline is-variable is-2 is-centered">
-          <!-- Row 7 -->
-          <div class="column is-half">
-              <div class="content">
-                  <p class="content is-5 has-text-left">IL-only Policy: Dynamic Collision</p>
-                  <video class="video-container" autoplay controls muted loop playsinline>
-                      <source src="./static/videos/clip_1726923764200-IL.mp4" type="video/mp4">
-                  </video>
-              </div>
-          </div>
-          <div class="column is-half">
-              <div class="content">
-                  <p class="content is-5 has-text-left">RAD: Success</p>
-                  <video class="video-container" autoplay controls muted loop playsinline>
-                      <source src="./static/videos/clip_1726923764200-RAD.mp4" type="video/mp4">
-                  </video>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div style="height: 10px;"></div>
-
-  <div class="container background-container">
-      <h3 class="title is-4 has-text-centered">Clip 8 : Detour; Traverse Narrow Lane</h3>
-      <div class="columns is-multiline is-variable is-2 is-centered">
-          <!-- Row 8 -->
-          <div class="column is-half">
-              <div class="content">
-                  <p class="content is-5 has-text-left">IL-only Policy: Dynamic Collision</p>
-                  <video class="video-container" autoplay controls muted loop playsinline>
-                      <source src="./static/videos/clip_1726267968399-IL.mp4" type="video/mp4">
-                  </video>
-              </div>
-          </div>
-          <div class="column is-half">
-              <div class="content">
-                  <p class="content is-5 has-text-left">RAD: Success</p>
-                  <video class="video-container" autoplay controls muted loop playsinline>
-                      <source src="./static/videos/clip_1726267968399-RAD.mp4" type="video/mp4">
-                  </video>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div style="height: 10px;"></div>
-
-  <div class="container background-container">
-      <h3 class="title is-4 has-text-centered">Clip 9 : Unprotected Left-turn</h3>
-      <div class="columns is-multiline is-variable is-2 is-centered">
-          <!-- Row 9 -->
-          <div class="column is-half">
-              <div class="content">
-                  <p class="content is-5 has-text-left">IL-only Policy: Dynamic Collision</p>
-                  <video class="video-container" autoplay controls muted loop playsinline>
-                      <source src="./static/videos/clip_1726723784999-IL.mp4" type="video/mp4">
-                  </video>
-              </div>
-          </div>
-          <div class="column is-half">
-              <div class="content">
-                  <p class="content is-5 has-text-left">RAD: Success</p>
-                  <video class="video-container" autoplay controls muted loop playsinline>
-                      <source src="./static/videos/clip_1726723784999-RAD.mp4" type="video/mp4">
-                  </video>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div style="height: 10px;"></div>
-
-  <div class="container background-container">
-      <h3 class="title is-4 has-text-centered">Clip 10 : Stop-and-Start Following</h3>
-      <div class="columns is-multiline is-variable is-2 is-centered">
-          <!-- Row 10 -->
-          <div class="column is-half">
-              <div class="content">
-                  <p class="content is-5 has-text-left">IL-only Policy: Heading Deviation</p>
-                  <video class="video-container" autoplay controls muted loop playsinline>
-                      <source src="./static/videos/clip_1726268262099-IL.mp4" type="video/mp4">
-                  </video>
-              </div>
-          </div>
-          <div class="column is-half">
-              <div class="content">
-                  <p class="content is-5 has-text-left">RAD: Success</p>
-                  <video class="video-container" autoplay controls muted loop playsinline>
-                      <source src="./static/videos/clip_1726268262099-RAD.mp4" type="video/mp4">
-                  </video>
-              </div>
-          </div>
-      </div>
-  </div>
-
-</div>
 
 <div style="margin-top: 30px;"></div>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title is-3">BibTeX</h2>
-    <pre><code>@article{}</code></pre>
+    <pre><code>@article{Genesis,
+  title={Genesis: Multimodal Driving Scene Generation with Spatio-Temporal and Cross-Modal Consistency},
+  author={Guo, xiangyu and Wu, Zhanqian and Xiong, Kaixin and Xu, Ziyang and Zhou, lijun and Xu, Gangwei and Xu, Shaoqing and Sun, Haiyang and Wang, Bing and Chen, Guang and Ye, Hangjun and Liu, Wenyu and Wang, Xinggang},
+  journal={arXiv preprint arXiv:},
+  year={2025}
+}</code></pre>
   </div>
 </section>
 
@@ -494,7 +376,8 @@
           </p>
           <p>
             The source code is borrowed from <a
-              href="https://github.com/xiaomi-research/genesis">Genesis</a>
+              href="https://github.com/HGao-cv/RAD">nerfies</a>,
+              we thank the authors for sharing the templates.
           </p>
         </div>
       </div>
