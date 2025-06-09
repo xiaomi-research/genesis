@@ -106,7 +106,7 @@
             <p></p>
             <span class="author-block"><sup>*</sup>Equal Contributions.</span>
             <span class="author-block"><sup>◇</sup>Intern of Xiaomi EV.</span>
-            <span class="author-block"><sup>†</sup>Project Lead.</span>
+            <span class="author-block"><sup>†</sup>Project Leader.</span>
             <span class="author-block"><sup>✉</sup>Corresponding Author.</span>
 
           <!-- </div> -->
@@ -155,56 +155,9 @@
 
 </section>
 
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-2" style="white-space: nowrap;">Joint generation of LiDAR and multi-view video</h2>
-    <video controls width="100%">
-      <source src="./static/videos/22_combined.mp4" type="video/mp4">
-    </video>
-  </div>
-</section> -->
-
-<section class="section">
-  <div class="container is-max-desktop" style="text-align: center;">
-    <h2 class="title is-2" style="white-space: nowrap; display: inline-block;">Joint generation of LiDAR and multi-view video</h2>
-    
-    <!-- 修改：垂直布局，间距40px，内容居中 -->
-    <div style="display: flex; flex-direction: column; gap: 40px; margin-top: 20px; align-items: center;">
-    
-      <!-- 第一个视频块 -->
-      <div style="text-align: center; width: 100%;">
-        <h3 class="title is-4">Clip1</h3>
-        <video controls width="100%">
-          <source src="./static/videos/22_combined.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
-      <!-- 第二个视频块 -->
-      <div style="text-align: center; width: 100%;">
-        <h3 class="title is-4">Clip2</h3>
-        <video controls width="100%">
-          <source src="./static/videos/25_combined.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
-      <!-- 第三个视频块 -->
-      <div style="text-align: center; width: 100%;">
-        <h3 class="title is-4">Clip3</h3>
-        <video controls width="100%">
-          <source src="./static/videos/26_combined.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
-    </div>
-  </div>
-</section>
-
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-2">Framework</h2>
+    <h2 class="title is-3" style="white-space: nowrap; display: inline-block;">Framework</h2>
     <div class="content has-text-justified">
       Genesis employs a unified pipeline where both video and LiDAR branches operate within a shared latent space. Vision and geometry are directly coupled through a novel cross-modal conditioning mechanism, enabling consistent temporal evolution and geometric alignment across modalities without relying on occupancy or voxel intermediates.
     </div>
@@ -212,9 +165,128 @@
   </div>
 </section>
 
+ <!-- style="text-align: center;" -->
+
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-2">Video Generation Results</h2>
+    <h2 class="title is-3" style="white-space: nowrap; display: inline-block;">Joint Generation on nuScenes</h2>
+    
+    <!-- 修改：垂直布局，间距40px，内容居中 -->
+    <div style="display: flex; flex-direction: column; gap: 40px; margin-top: 20px; align-items: center;">
+    
+      <!-- 第一个视频块 -->
+      <div style="text-align: center; width: 100%;">
+        <h3 class="title is-5">Clip1</h3>
+        <video controls width="100%">
+          <source src="./static/videos/nuc_joint_lc1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- 第二个视频块 -->
+      <div style="text-align: center; width: 100%;">
+        <h3 class="title is-5">Clip2</h3>
+        <video controls width="100%">
+          <source src="./static/videos/nuc_joint_lc2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3" style="white-space: nowrap;">Long-term Multi-View Video Generation on nuScenes</h2>
+    <video controls width="100%">
+      <source src="./static/videos/nuc_long1.mp4" type="video/mp4">
+    </video>
+    <video controls width="100%">
+      <source src="./static/videos/nuc_long2.mp4" type="video/mp4">
+    </video>
+    <video controls width="100%">
+      <source src="./static/videos/nuc_long3.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3" style="white-space: nowrap; display: inline-block;">Day & Night Generation on nuScenes</h2>
+    <video controls width="100%">
+      <source src="./static/videos/nuc_day_night.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop" >
+    <h2 class="title is-3" style="white-space: nowrap; display: inline-block;">Trajectory-Controlled Generation on nuScenes</h2>
+    <video controls width="100%">
+      <source src="./static/videos/nuc_shift1.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3" style="white-space: nowrap; display: inline-block;">Joint Generation on Private Data</h2>
+    <!-- 修改：垂直布局，间距40px，内容居中 -->
+    <div style="display: flex; flex-direction: column; gap: 40px; margin-top: 20px; align-items: center;">
+    
+      <!-- 第一个视频块 -->
+      <div style="text-align: center; width: 100%;">
+        <!-- <h3 class="title is-4">Clip1</h3> -->
+        <video controls width="100%">
+          <source src="./static/videos/private_uni1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- 第二个视频块 -->
+      <div style="text-align: center; width: 100%;">
+        <!-- <h3 class="title is-4">Clip2</h3> -->
+        <video controls width="100%">
+          <source src="./static/videos/private_uni2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3" style="white-space: nowrap;">Long-term Generation(40s) on Private Data</h2>
+    <video controls width="100%">
+      <source src="./static/videos/private_long1.mp4" type="video/mp4">
+    </video>
+    <video controls width="100%">
+      <source src="./static/videos/private_long2.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3" style="white-space: nowrap; display: inline-block;">Weather-Controllable Generation on Private Data</h2>
+    <video controls width="100%">
+      <source src="./static/videos/private_weather_shift.mp4" type="video/mp4">
+    </video>
+  </div>
+</section> -->
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Video Generation Results</h2>
     <div class="content has-text-justified">
       Video Generation Comparison on nuScenes validation set, where green and blue represent the best and the second best values.
     </div>
@@ -224,82 +296,13 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-2">LiDAR Generation Results</h2>
+    <h2 class="title is-3">LiDAR Generation Results</h2>
     <div class="content has-text-justified">
       Lidar Generation Comparison on nuScenes validation set, where green and blue represent the best and the second best values. ‘gt_img” and gen_img” indicate using ground-truth or generated images as BEV condition input, respectively.
     </div>
     <img src="./static/images/lidar.png">
   </div>
 </section>
-
-<section class="section">
-  <div class="container is-max-desktop" style="text-align: center;">
-    <h2 class="title is-2" style="white-space: nowrap;">Long-term multi-view video generation over 20 seconds</h2>
-    <video controls width="100%">
-      <source src="./static/videos/69_long.mp4" type="video/mp4">
-    </video>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop" style="text-align: center;">
-    <h2 class="title is-2" style="white-space: nowrap; display: inline-block;">Controllable generation across time-of-day</h2>
-    
-    <!-- 修改：水平布局，间距40px，内容居中 -->
-    <div style="display: flex; flex-direction: row; gap: 40px; margin-top: 40px; justify-content: center; align-items: center;">
-    
-      <!-- 左边夜间视频块 -->
-      <div style="text-align: center; width: 50%;">
-        <h3 class="title is-4">night</h3>
-        <video controls width="100%">
-          <source src="./static/videos/135_night.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
-      <!-- 右边白天视频块 -->
-      <div style="text-align: center; width: 50%;">
-        <h3 class="title is-4">day</h3>
-        <video controls width="100%">
-          <source src="./static/videos/135_day.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop" style="text-align: center;">
-    <h2 class="title is-2" style="white-space: nowrap; display: inline-block;">Trajectory-conditioned novel view synthesis</h2>
-    
-    <!-- 修改：水平布局，间距40px，内容居中 -->
-    <div style="display: flex; flex-direction: row; gap: 40px; margin-top: 40px; justify-content: center; align-items: center;">
-    
-      <!-- 左边夜间视频块 -->
-      <div style="text-align: center; width: 50%;">
-        <h3 class="title is-4">Original</h3>
-        <video controls width="100%">
-          <source src="./static/videos/4-11.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
-      <!-- 右边白天视频块 -->
-      <div style="text-align: center; width: 50%;">
-        <h3 class="title is-4">Right Shift 2m</h3>
-        <video controls width="100%">
-          <source src="./static/videos/4-11-change.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
-    </div>
-  </div>
-</section>
-
 
 <style>
   .container.fixed-width {
@@ -376,7 +379,7 @@
           </p>
           <p>
             The source code is borrowed from <a
-              href="https://github.com/HGao-cv/RAD">nerfies</a>,
+              href=""></a>,
               we thank the authors for sharing the templates.
           </p>
         </div>

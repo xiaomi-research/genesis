@@ -1,1 +1,1 @@
-# Genesis Page
+# Genesis
