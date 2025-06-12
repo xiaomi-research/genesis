@@ -9,7 +9,7 @@ Xiangyu Guo<sup>1\*</sup>, Zhanqian Wu<sup>2\*</sup>, Kaixin Xiong<sup>2\*</sup>
 
 (\*) Equal contribution. (†) Project leader. (✉)Corresponding Author.
 
-<a href=""><img src='https://img.shields.io/badge/arXiv-Genesis-red' alt='Paper PDF'></a>
+<a href="https://arxiv.org/abs/2506.07497"><img src='https://img.shields.io/badge/arXiv-Genesis-red' alt='Paper PDF'></a>
 <a href="https://xiaomi-research.github.io/genesis/"><img src='https://img.shields.io/badge/Project_Page-Genesis-green' alt='Project Page'></a>
 </div>
 
