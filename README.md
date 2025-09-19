@@ -1,7 +1,7 @@
 
 
 <div align="center">
-<h3>Genesis: Multimodal Driving Scene Generation with Spatio-Temporal and Cross-Modal Consistency</h3>
+<h3>[🎉NeurIPS 2025!]Genesis: Multimodal Driving Scene Generation with Spatio-Temporal and Cross-Modal Consistency</h3>
 
 Xiangyu Guo<sup>1\*</sup>, Zhanqian Wu<sup>2\*</sup>, Kaixin Xiong<sup>2\*</sup>, Ziyang Xu<sup>1</sup>, Lijun Zhou<sup>2</sup>, Gangwei Xu<sup>1</sup>, 
 Shaoqing Xu<sup>2</sup>,  Haiyang Sun<sup>2†</sup>,  Bing Wang<sup>2</sup>, Guang Chen<sup>2</sup>, 
@@ -27,6 +27,8 @@ We present Genesis, a unified framework for joint generation of multi-view drivi
 </div>
 
 ## News
+`[2025/09/18]` Genesis is accepted by NeurIPS 2025🎉🎉🎉!
+
 `[2025/06/18]` [ArXiv](https://arxiv.org/abs/2506.07497) paper release. Models/Code are coming soon. Please stay tuned! ☕️
 
 ## Updates
